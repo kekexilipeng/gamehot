@@ -1,5 +1,7 @@
 # GameHOT 免费静态版
 
+在线访问：**[GameHOT 游戏热榜](https://kekexilipeng.github.io/gamehot/)** · [自动更新记录](https://github.com/kekexilipeng/gamehot/actions/workflows/publish.yml)
+
 游戏行业资讯、热点、日报、主题，以及 Steam、国内与海外分类手游榜。基于 AIHOT 的公开采集器改造；网页读取静态 JSON，不依赖 Netlify、PostgreSQL、常驻服务器或付费模型接口。
 
 ## 来源与许可

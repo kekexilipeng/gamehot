@@ -1,0 +1,194 @@
+{
+  "$comment": "GameHOT 首次启动信源；2026-11-05 已验证 HTTP 与 RSS 内容。既有数据库需在后台暂停原 AI 示例源。默认只展示摘要与原文链接。",
+  "sources": [
+    {
+      "id": "rss-playstation",
+      "name": "PlayStation Blog",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://blog.playstation.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "sony",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "主机游戏"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-xbox",
+      "name": "Xbox Wire",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://news.xbox.com/en-us/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "microsoft",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "主机游戏"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-steam",
+      "name": "Steam 官方新闻",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://store.steampowered.com/feeds/news.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "valve",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "PC游戏"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-godot",
+      "name": "Godot 官方博客",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://godotengine.org/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "godot",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "游戏引擎"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-gamesindustry",
+      "name": "GamesIndustry.biz",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.gamesindustry.biz/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": null,
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "行业商业"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-gamedeveloper",
+      "name": "Game Developer",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.gamedeveloper.com/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": null,
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "研发技术"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-pcgamer",
+      "name": "PC Gamer",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.pcgamer.com/rss/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": null,
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "PC游戏"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-gcores",
+      "name": "机核 GCORES",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.gcores.com/rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": null,
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-unity",
+      "name": "Unity 官方博客",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://blog.unity.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "unity",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "游戏引擎"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    }
+  ]
+}

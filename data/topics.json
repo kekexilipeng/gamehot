@@ -1,0 +1,406 @@
+{
+  "groups": [
+    {
+      "key": "company",
+      "name": "公司与平台",
+      "blurb": "跟踪游戏厂商、发行平台和引擎团队"
+    },
+    {
+      "key": "field",
+      "name": "行业赛道",
+      "blurb": "PC、主机、移动、独立游戏与出海研发"
+    },
+    {
+      "key": "genre",
+      "name": "内容形态",
+      "blurb": "新作、版本、数据、技术与政策"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "tencent",
+      "name": "腾讯游戏",
+      "group": "company",
+      "entityId": "tencent",
+      "aliases": [
+        "腾讯游戏",
+        "腾讯",
+        "Tencent Games",
+        "Tencent"
+      ],
+      "definition": "追踪 腾讯游戏 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "netease",
+      "name": "网易游戏",
+      "group": "company",
+      "entityId": "netease",
+      "aliases": [
+        "网易游戏",
+        "网易",
+        "NetEase Games",
+        "NetEase"
+      ],
+      "definition": "追踪 网易游戏 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "hoyoverse",
+      "name": "米哈游 / HoYoverse",
+      "group": "company",
+      "entityId": "hoyoverse",
+      "aliases": [
+        "HoYoverse / 米哈游",
+        "米哈游 / HoYoverse",
+        "米哈游",
+        "miHoYo",
+        "HoYoverse"
+      ],
+      "definition": "追踪 米哈游 / HoYoverse 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "sony",
+      "name": "Sony / PlayStation",
+      "group": "company",
+      "entityId": "sony",
+      "aliases": [
+        "Sony",
+        "索尼",
+        "PlayStation",
+        "SIE"
+      ],
+      "definition": "追踪 Sony / PlayStation 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft / Xbox",
+      "group": "company",
+      "entityId": "microsoft",
+      "aliases": [
+        "Microsoft",
+        "微软",
+        "Xbox",
+        "Xbox Game Studios"
+      ],
+      "definition": "追踪 Microsoft / Xbox 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "nintendo",
+      "name": "Nintendo 任天堂",
+      "group": "company",
+      "entityId": "nintendo",
+      "aliases": [
+        "Nintendo",
+        "任天堂"
+      ],
+      "definition": "追踪 Nintendo 任天堂 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "valve",
+      "name": "Valve / Steam",
+      "group": "company",
+      "entityId": "valve",
+      "aliases": [
+        "Valve",
+        "Steam"
+      ],
+      "definition": "追踪 Valve / Steam 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "epic",
+      "name": "Epic Games",
+      "group": "company",
+      "entityId": "epic",
+      "aliases": [
+        "Epic Games",
+        "Epic",
+        "Unreal Engine",
+        "虚幻引擎"
+      ],
+      "definition": "追踪 Epic Games 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "unity",
+      "name": "Unity",
+      "group": "company",
+      "entityId": "unity",
+      "aliases": [
+        "Unity",
+        "Unity Technologies"
+      ],
+      "definition": "追踪 Unity 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "godot",
+      "name": "Godot",
+      "group": "company",
+      "entityId": "godot",
+      "aliases": [
+        "Godot",
+        "Godot Engine",
+        "Godot Foundation"
+      ],
+      "definition": "追踪 Godot 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "ea",
+      "name": "Electronic Arts / EA",
+      "group": "company",
+      "entityId": "ea",
+      "aliases": [
+        "Electronic Arts",
+        "EA",
+        "艺电"
+      ],
+      "definition": "追踪 Electronic Arts / EA 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "ubisoft",
+      "name": "Ubisoft 育碧",
+      "group": "company",
+      "entityId": "ubisoft",
+      "aliases": [
+        "Ubisoft",
+        "育碧"
+      ],
+      "definition": "追踪 Ubisoft 育碧 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "taketwo",
+      "name": "Take-Two / Rockstar",
+      "group": "company",
+      "entityId": "takeTwo",
+      "aliases": [
+        "Take-Two",
+        "Take Two",
+        "Rockstar Games",
+        "2K Games"
+      ],
+      "definition": "追踪 Take-Two / Rockstar 在游戏领域的产品、经营与平台动态。"
+    },
+    {
+      "slug": "pc",
+      "name": "PC游戏",
+      "group": "field",
+      "tags": [
+        "PC游戏"
+      ],
+      "definition": "跟踪PC游戏相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "console",
+      "name": "主机游戏",
+      "group": "field",
+      "tags": [
+        "主机游戏"
+      ],
+      "definition": "跟踪主机游戏相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "mobile",
+      "name": "移动游戏",
+      "group": "field",
+      "tags": [
+        "移动游戏"
+      ],
+      "definition": "跟踪移动游戏相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "indie",
+      "name": "独立游戏",
+      "group": "field",
+      "tags": [
+        "独立游戏"
+      ],
+      "definition": "跟踪独立游戏相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "global-publishing",
+      "name": "游戏出海",
+      "group": "field",
+      "tags": [
+        "游戏出海"
+      ],
+      "definition": "跟踪游戏出海相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "marketing",
+      "name": "买量营销",
+      "group": "field",
+      "tags": [
+        "买量营销"
+      ],
+      "definition": "跟踪买量营销相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "monetization",
+      "name": "商业化",
+      "group": "field",
+      "tags": [
+        "商业化"
+      ],
+      "definition": "跟踪商业化相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "engines",
+      "name": "游戏引擎",
+      "group": "field",
+      "tags": [
+        "游戏引擎"
+      ],
+      "definition": "跟踪游戏引擎相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "rendering",
+      "name": "图形渲染",
+      "group": "field",
+      "tags": [
+        "图形渲染"
+      ],
+      "definition": "跟踪图形渲染相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "game-ai",
+      "name": "游戏AI",
+      "group": "field",
+      "tags": [
+        "游戏AI"
+      ],
+      "definition": "跟踪游戏AI相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "multiplayer",
+      "name": "联机服务",
+      "group": "field",
+      "tags": [
+        "联机服务"
+      ],
+      "definition": "跟踪联机服务相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "growth",
+      "name": "用户增长",
+      "group": "field",
+      "tags": [
+        "用户增长"
+      ],
+      "definition": "跟踪用户增长相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "esports",
+      "name": "电竞",
+      "group": "field",
+      "tags": [
+        "电竞"
+      ],
+      "definition": "跟踪电竞相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "ip-adaptation",
+      "name": "IP改编",
+      "group": "field",
+      "tags": [
+        "IP改编"
+      ],
+      "definition": "跟踪IP改编相关的游戏行业事实与实践。"
+    },
+    {
+      "slug": "releases",
+      "name": "新作发布",
+      "group": "genre",
+      "tags": [
+        "新作发布"
+      ],
+      "definition": "汇总游戏行业的新作发布内容。"
+    },
+    {
+      "slug": "updates",
+      "name": "版本更新",
+      "group": "genre",
+      "tags": [
+        "版本更新"
+      ],
+      "definition": "汇总游戏行业的版本更新内容。"
+    },
+    {
+      "slug": "publishing",
+      "name": "发行运营",
+      "group": "genre",
+      "tags": [
+        "发行运营"
+      ],
+      "definition": "汇总游戏行业的发行运营内容。"
+    },
+    {
+      "slug": "market-data",
+      "name": "市场数据",
+      "group": "genre",
+      "tags": [
+        "市场数据"
+      ],
+      "definition": "汇总游戏行业的市场数据内容。"
+    },
+    {
+      "slug": "business",
+      "name": "行业动态",
+      "group": "genre",
+      "tags": [
+        "行业动态"
+      ],
+      "definition": "汇总游戏行业的行业动态内容。"
+    },
+    {
+      "slug": "dev-tools",
+      "name": "研发工具",
+      "group": "genre",
+      "tags": [
+        "研发工具"
+      ],
+      "definition": "汇总游戏行业的研发工具内容。"
+    },
+    {
+      "slug": "research",
+      "name": "论文/研究",
+      "group": "genre",
+      "tags": [
+        "论文/研究"
+      ],
+      "definition": "汇总游戏行业的论文/研究内容。"
+    },
+    {
+      "slug": "tutorials",
+      "name": "教程/实践",
+      "group": "genre",
+      "tags": [
+        "教程/实践"
+      ],
+      "definition": "汇总游戏行业的教程/实践内容。"
+    },
+    {
+      "slug": "analysis",
+      "name": "观点分析",
+      "group": "genre",
+      "tags": [
+        "观点分析"
+      ],
+      "definition": "汇总游戏行业的观点分析内容。"
+    },
+    {
+      "slug": "regulation",
+      "name": "政策/监管",
+      "group": "genre",
+      "tags": [
+        "政策/监管"
+      ],
+      "definition": "汇总游戏行业的政策/监管内容。"
+    },
+    {
+      "slug": "open-source",
+      "name": "开源/仓库",
+      "group": "genre",
+      "tags": [
+        "开源/仓库"
+      ],
+      "definition": "汇总游戏行业的开源/仓库内容。"
+    }
+  ]
+}

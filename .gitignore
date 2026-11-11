@@ -1,0 +1,10 @@
+/site/
+node_modules/
+validation/
+.env
+.env.*
+data/state.json
+data/mobile.json
+data/profiles.json
+data/steam.json
+*.log

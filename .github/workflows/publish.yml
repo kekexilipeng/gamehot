@@ -1,0 +1,57 @@
+name: Update GameHOT and publish Pages
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['data/news.json', 'README.md', 'NOTICE', 'LICENSE']
+  schedule:
+    - cron: '15 */2 * * *'
+
+concurrency:
+  group: gamehot-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Test collection rules
+        run: node --test tests/*.test.mjs
+      - name: Collect public feeds and generate site
+        env:
+          COLLECT_ENABLED: 'true'
+          GAMEHOT_PREVIOUS_URL: ${{ steps.pages.outputs.base_url }}/
+        run: node scripts/collector.mjs --build
+      - name: Check published data
+        run: node scripts/verify.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+          retention-days: 1
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Preserve collected news history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/news.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update collected news history'
+            git push origin HEAD:main
+          fi
